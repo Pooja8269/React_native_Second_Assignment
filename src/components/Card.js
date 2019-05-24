@@ -1,14 +1,16 @@
 import React from 'react';
 import { View } from 'react-native';
 
+// Created reusable card component
 const Card = (props) => {
 return (
         <View style={styles.containerStyle}>
-            {props.children}
+            {props.children} // Accessed children data using props from parent components 
         </View>
     );
 };
 
+// Card styling
 const styles = {
     containerStyle: {
         flexDirection: 'row',

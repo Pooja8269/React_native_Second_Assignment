@@ -9,7 +9,7 @@ export default class App extends Component {
    EmployeeData   // Using JSON Data 
 };
 
-//Rendering JSON data to component <EmployeeDetail> using props
+//Parcing JSON data to component <EmployeeDetail> using props
 renderDetails(){
   return this.state.EmployeeData.map(EmployeeData => <EmployeeDetail props={EmployeeData} />);
 }
@@ -19,7 +19,7 @@ renderDetails(){
       <View style={{ flex:1}}>
         <Header headerText={"Employee List"} />
          <ScrollView>
-             {this.renderDetails()}
+             {this.renderDetails()} // Render details function calling
          </ScrollView>
       </View>
     );

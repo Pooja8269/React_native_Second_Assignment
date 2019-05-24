@@ -9,15 +9,19 @@ const {headerContentStyl,headerTextStyle, imageContainerStyle,namestyle,imageSty
 
 return(
     <Card>
-        <View style={imageContainerStyle}>
-          <Image style={imageStyle} source={{uri:props.image }} />
+       <View style={imageContainerStyle}>
+    
+     // Accessed JSON data from root component app using props (image
+          <Image style={imageStyle} source={{uri:props.image }} /> 
       </View>
       
       <CardSection>
       <View style={headerContentStyl}>
-         <Text style={headerTextStyle}>Employe ID: {props.Employe_ID}</Text>
-         <Text style={namestyle}>Name: {props.Name}</Text>
-         <Text style={namestyle}>Designation: {props.Designation}</Text>
+    
+    // Accessed JSON data from root component app using props (Employe_ID , Name , Designation)
+          <Text style={headerTextStyle}>Employe ID: {props.Employe_ID}</Text> 
+          <Text style={namestyle}>Name: {props.Name}</Text>
+          <Text style={namestyle}>Designation: {props.Designation}</Text>
         </View>
       </CardSection>
 
@@ -25,6 +29,7 @@ return(
 );
 }
 
+// EmployeeDetail styling
 const styles = {
      headerContentStyl: {
          flexDirection: 'column',

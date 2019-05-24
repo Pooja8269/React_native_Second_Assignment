@@ -6,9 +6,10 @@ import Header from './src/components/Header';
 
 export default class App extends Component {
   state={ 
-   EmployeeData   
+   EmployeeData   // Using JSON Data 
 };
 
+//Rendering JSON data to component <EmployeeDetail> using props
 renderDetails(){
   return this.state.EmployeeData.map(EmployeeData => <EmployeeDetail props={EmployeeData} />);
 }
@@ -17,9 +18,9 @@ renderDetails(){
     return (
       <View style={{ flex:1}}>
         <Header headerText={"Employee List"} />
-           <ScrollView>
-                {this.renderDetails()} 
-            </ScrollView>
+         <ScrollView>
+             {this.renderDetails()}
+         </ScrollView>
       </View>
     );
   }

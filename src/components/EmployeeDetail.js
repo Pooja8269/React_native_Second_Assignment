@@ -27,23 +27,23 @@ return(
 
 const styles = {
      headerContentStyl: {
-        flexDirection: 'column',
-        margin:10
-      },
+         flexDirection: 'column',
+         margin:10
+     },
      headerTextStyle:{
-       fontSize : 18,
+         fontSize : 18,
      },
-    namestyle:{
-     fontSize : 15,
-    },
-  imageContainerStyle:{
-    flex: 1,
-    margin: 5,
+     namestyle:{
+         fontSize : 15,
      },
- imageStyle:{
-   width: 100,
-   height: 100, 
-},
+     imageContainerStyle:{
+         flex: 1,
+         margin: 5,
+     },
+     imageStyle:{
+         width: 100,
+         height: 100, 
+     },
 };
 
 export default EmployeeDetail;

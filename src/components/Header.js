@@ -1,15 +1,18 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
+//Created reusable header component
 const Header = (props) => {
   const { textStyle, viewStyle } = styles;
  return (
     <View style={viewStyle}>
-   <Text style={textStyle}>{props.headerText}</Text> 
+    //Accessed children data using props from parent components
+   <Text style={textStyle}>{props.headerText}</Text>  
  </View>
   );
 };
 
+// Header styling
 const styles = {
   textStyle: {
         alignSelf: 'center',

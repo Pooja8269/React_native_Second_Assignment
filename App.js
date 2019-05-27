@@ -9,7 +9,7 @@ export default class App extends Component {
    EmployeeData   // Using JSON Data 
 };
 
-//Parcing JSON data to component <EmployeeDetail> using props
+//parsing JSON data to component <EmployeeDetail> using props
 renderDetails(){
   return this.state.EmployeeData.map(EmployeeData => <EmployeeDetail props={EmployeeData} />);
 }
